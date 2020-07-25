@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".parentsProfil">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_profil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/lato_bold"
+                android:letterSpacing="0.05"
+                android:text="@string/profil"
+                android:textColor="#273EA5"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profil_photo"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="115dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/ikon_profil" />
+
+        <TextView
+            android:id="@+id/tv_nama_parents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Nama keluarga"
+            android:textSize="24dp"
+            android:fontFamily="@font/lato_bold"
+            android:textColor="@color/basic"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:typeface="serif"/>
+        <TextView
+            android:id="@+id/tv_KK_parents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Nomor KK"
+            android:textSize="20dp"
+            android:fontFamily="@font/open_sans"
+            android:textColor="@color/colorSubTitle"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:typeface="sans"/>
+        <TextView
+            android:id="@+id/tv_notelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="(+62)8131069354"
+            android:textSize="20dp"
+            android:fontFamily="@font/open_sans"
+            android:textColor="@color/colorSubTitle"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:typeface="sans"/>
+        <TextView
+            android:id="@+id/tv_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Alamat"
+            android:fontFamily="@font/open_sans"
+            android:textColor="@color/colorSubTitle"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:textAlignment="center"
+            android:typeface="sans"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/keluar"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#273EA5"
+        android:fontFamily="@font/lato_bold"
+        android:letterSpacing="0.05"
+        android:text="KELUAR"
+        android:textColor="#FFFFFF" />
+</RelativeLayout>
