@@ -82,7 +82,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/open_sans"
-                            android:text="Menu 1"
+                            android:text="Profil"
                             android:textColor="@android:color/white" />
 
                     </LinearLayout>
@@ -115,7 +115,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/open_sans"
-                            android:text="Menu 2"
+                            android:text="Histori"
                             android:textColor="@android:color/white" />
 
                     </LinearLayout>
@@ -158,7 +158,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/open_sans"
-                            android:text="Menu 3"
+                            android:text="Gizi"
                             android:textColor="@android:color/white" />
 
                     </LinearLayout>
@@ -191,7 +191,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/open_sans"
-                            android:text="Menu 4"
+                            android:text="Resep"
                             android:textColor="@android:color/white" />
 
                     </LinearLayout>
