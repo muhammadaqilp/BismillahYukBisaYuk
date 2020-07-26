@@ -2,6 +2,7 @@ package com.example.bismillahyukbisayuk;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
@@ -14,11 +15,15 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     CardView menu1, menu2, menu3, menu4;
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         menu1 = findViewById(R.id.nav_menu1);
         menu2 = findViewById(R.id.nav_menu2);
@@ -53,25 +58,26 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.profil, menu);
         return super.onCreateOptionsMenu(menu);
     }
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         setMode(item.getItemId());
         return super.onOptionsItemSelected(item);
     }
 
-    public void setMode(int selectedMode)
-    {
-        switch (selectedMode)
-        {
+    public void setMode(int selectedMode) {
+        switch (selectedMode) {
             case R.id.action_about:
-                Intent move = new Intent(MainActivity.this,ProfileActivity.class);
+                Intent move = new Intent(MainActivity.this, ProfileActivity.class);
                 startActivity(move);
                 break;
         }
     }
+
 }

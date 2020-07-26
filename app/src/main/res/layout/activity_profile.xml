@@ -7,7 +7,7 @@
     android:fitsSystemWindows="true"
     android:background="@color/profileBackground">
 
-    <androidx.appcompat.widget.AppCompatSeekBar
+    <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -69,6 +69,7 @@
                         android:background="@drawable/profile_bk"/>
 
                     <TextView
+                        android:id="@+id/backtohome"
                         android:text="Back to\nHome"
                         style="@style/profileStyledBackButton" />
                 </RelativeLayout>
@@ -83,7 +84,7 @@
                 app:popupTheme="@style/AppTheme.PopupOverlay" />
 
         </androidx.appcompat.widget.Toolbar>
-    </androidx.appcompat.widget.AppCompatSeekBar>
+    </com.google.android.material.appbar.AppBarLayout>
 
     <include layout="@layout/content_profile" />
 
