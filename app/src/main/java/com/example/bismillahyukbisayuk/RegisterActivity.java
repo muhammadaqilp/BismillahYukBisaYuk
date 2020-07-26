@@ -15,11 +15,8 @@ import android.widget.TextView;
 public class RegisterActivity extends AppCompatActivity {
 
     Toolbar toolbar;
-    EditText nama, email, password;
-    Button daftar;
-    RadioGroup radioGroup;
-    RadioButton radioButton;
-    TextView masuk;
+    EditText username, password;
+    Button next_ortu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,36 +24,20 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         toolbar = findViewById(R.id.toolbar);
-        nama = findViewById(R.id.namalengkap);
-        email = findViewById(R.id.email);
+        username = findViewById(R.id.username);
         password = findViewById(R.id.password);
-        daftar = findViewById(R.id.btn_daftar);
-        radioGroup = findViewById(R.id.radioGroupNb);
-        masuk = findViewById(R.id.masuksekarang);
+        next_ortu = findViewById(R.id.btn_next_awal);
 
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        masuk.setOnClickListener(new View.OnClickListener() {
+        next_ortu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent masuk = new Intent(RegisterActivity.this, LoginActivity.class);
-                startActivity(masuk);
+                Intent nextOrtu = new Intent(RegisterActivity.this, RegisterOrtuActivity.class);
+                startActivity(nextOrtu);
             }
         });
 
-        daftar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
-    }
-
-    public void checkButton(View v){
-        int radioId = radioGroup.getCheckedRadioButtonId();
-
-        radioButton=findViewById(radioId);
     }
 }

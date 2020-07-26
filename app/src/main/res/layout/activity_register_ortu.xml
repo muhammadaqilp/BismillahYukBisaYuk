@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
+    tools:context=".RegisterOrtuActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/bar"
@@ -80,14 +80,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/lato"
-                    android:text="Ayo bergabung dengan kami"
+                    android:text="Silahkan Masukkan Data Orangtua"
                     android:textAlignment="center"
                     android:textColor="#030303"
                     android:textSize="16sp" />
+
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/formemail"
+                android:id="@+id/formnama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/judulll"
@@ -96,11 +97,31 @@
                 android:orientation="horizontal">
 
                 <com.rengwuxian.materialedittext.MaterialEditText
-                    android:id="@+id/username"
+                    android:id="@+id/namaayah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/open_sans"
+                    android:hint="Nama Ayah"
+                    android:padding="4dp"
+                    app:met_floatingLabel="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/formemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/formnama"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/namaibu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/open_sans"
-                    android:hint="Username"
+                    android:hint="Nama Ibu"
                     android:padding="4dp"
                     app:met_floatingLabel="normal" />
 
@@ -116,13 +137,12 @@
                 android:orientation="horizontal">
 
                 <com.rengwuxian.materialedittext.MaterialEditText
-                    android:id="@+id/password"
+                    android:id="@+id/alamatrumah"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/open_sans"
-                    android:hint="Kata Sandi"
+                    android:hint="Alamat Rumah"
                     android:padding="4dp"
-                    android:inputType="textPassword"
                     app:met_floatingLabel="normal" />
 
             </LinearLayout>
@@ -131,7 +151,7 @@
                 android:id="@+id/formdaftar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/formpass"
+                android:layout_below="@id/formjk2"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="22dp"
                 android:layout_marginRight="8dp"
@@ -139,7 +159,7 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/btn_next_awal"
+                    android:id="@+id/btn_next_ortu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/shape1"

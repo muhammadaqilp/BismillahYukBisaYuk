@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
+    tools:context=".RegisterAnakActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/bar"
@@ -80,14 +80,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/lato"
-                    android:text="Ayo bergabung dengan kami"
+                    android:text="Silahkan Masukkan Data Anak"
                     android:textAlignment="center"
                     android:textColor="#030303"
                     android:textSize="16sp" />
+
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/formemail"
+                android:id="@+id/formnama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/judulll"
@@ -96,13 +97,60 @@
                 android:orientation="horizontal">
 
                 <com.rengwuxian.materialedittext.MaterialEditText
-                    android:id="@+id/username"
+                    android:id="@+id/namaanak"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/open_sans"
+                    android:hint="Nama Lengkap Anak"
+                    android:padding="4dp"
+                    app:met_floatingLabel="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/formemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/formnama"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/tempatlahir"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/open_sans"
-                    android:hint="Username"
+                    android:hint="Tempat Lahir"
                     android:padding="4dp"
                     app:met_floatingLabel="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/formtgllahir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/formnama"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tgllahir"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:hint="Tanggal Lahir"
+                    android:padding="4dp"
+                    app:met_floatingLabel="normal" />
+
+                <Button
+                    android:id="@+id/btnpicktgl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="pick tgl lahir"
+                    android:layout_marginLeft="18dp"/>
 
             </LinearLayout>
 
@@ -116,22 +164,92 @@
                 android:orientation="horizontal">
 
                 <com.rengwuxian.materialedittext.MaterialEditText
-                    android:id="@+id/password"
+                    android:id="@+id/tinggibadan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/open_sans"
-                    android:hint="Kata Sandi"
+                    android:hint="Tinggi Badan (cm)"
                     android:padding="4dp"
-                    android:inputType="textPassword"
                     app:met_floatingLabel="normal" />
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/formtb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/formemail"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/beratbadan"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:hint="Berat Badan (Kg)"
+                    android:padding="4dp"
+                    app:met_floatingLabel="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/formjk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/formtb"
+                android:layout_marginLeft="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:padding="8dp"
+                    android:text="Jenis Kelamin Anak"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/formjk2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/formjk"
+                android:layout_marginLeft="8dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/radioGroupNb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioLaki"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:fontFamily="@font/open_sans"
+                        android:text="Laki-Laki"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioPerempuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="22dp"
+                        android:fontFamily="@font/open_sans"
+                        android:text="Perempuan"
+                        android:textSize="18sp" />
+                </RadioGroup>
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/formdaftar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/formpass"
+                android:layout_below="@id/formjk2"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="22dp"
                 android:layout_marginRight="8dp"
@@ -139,14 +257,14 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/btn_next_awal"
+                    android:id="@+id/btn_daftar_anak"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/shape1"
                     android:backgroundTint="#227AA0"
                     android:fontFamily="@font/lato"
                     android:letterSpacing="0.05"
-                    android:text="NEXT"
+                    android:text="DAFTAR SEKARANG"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp" />
 

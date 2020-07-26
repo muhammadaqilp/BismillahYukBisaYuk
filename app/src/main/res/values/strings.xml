@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BismillahYukBisaYuk</string>
+    <string name="app_name">Nutrition Monitoring</string>
     <string name="profil">Profil Keluarga</string>
 
     <string name="title_activity_profile">Profile</string>
