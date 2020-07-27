@@ -19,7 +19,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Masuk"
+        android:text="Masuk User"
         android:id="@+id/btn_masuk"
         android:layout_marginTop="15dp"
         android:textColor="#273EA5"
@@ -28,7 +28,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Daftar (Orangtua Balita)"
+        android:text="Masuk Posyandu"
         android:id="@+id/btn_daftar"
         android:layout_marginTop="15dp"
         android:textColor="#273EA5"

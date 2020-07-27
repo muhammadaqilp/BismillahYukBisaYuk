@@ -7,6 +7,9 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".ProfileActivity"
     tools:showIn="@layout/activity_profile">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,7 +18,6 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp">
-
 
         <RelativeLayout style="@style/profileDetailsLayout">
             <ImageView
@@ -32,6 +34,44 @@
             <TextView
                 android:text="Siti"
                 android:layout_toRightOf="@id/nameImageView"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/nameImageViewAyah"
+                android:src="@drawable/infant"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:id="@+id/nameTextViewAyah"
+                android:text="Nama Ayah"
+                android:layout_toRightOf="@id/nameImageViewAyah"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:text="Siapa Kek"
+                android:layout_toRightOf="@id/nameImageViewAyah"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/nameImageViewIbu"
+                android:src="@drawable/infant"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:id="@+id/nameTextViewIbu"
+                android:text="Nama Ibu"
+                android:layout_toRightOf="@id/nameImageViewIbu"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:text="Siapa ya"
+                android:layout_toRightOf="@id/nameImageViewIbu"
                 style="@style/profileDetailsMiniText" />
 
         </RelativeLayout>
@@ -95,4 +135,5 @@
 
     </LinearLayout>
 
+    </ScrollView>
 </androidx.core.widget.NestedScrollView>

@@ -170,6 +170,7 @@
                     android:fontFamily="@font/open_sans"
                     android:hint="Tinggi Badan (cm)"
                     android:padding="4dp"
+                    android:inputType="number"
                     app:met_floatingLabel="normal" />
 
             </LinearLayout>
@@ -190,6 +191,7 @@
                     android:fontFamily="@font/open_sans"
                     android:hint="Berat Badan (Kg)"
                     android:padding="4dp"
+                    android:inputType="number"
                     app:met_floatingLabel="normal" />
             </LinearLayout>
 

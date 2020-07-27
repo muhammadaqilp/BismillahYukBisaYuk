@@ -10,10 +10,12 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    TextView textHello;
     CardView menu1, menu2, menu3, menu4;
     Toolbar toolbar;
 
@@ -25,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        textHello = findViewById(R.id.texthello);
         menu1 = findViewById(R.id.nav_menu1);
         menu2 = findViewById(R.id.nav_menu2);
         menu3 = findViewById(R.id.nav_menu3);
@@ -33,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         menu1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "AHAHA", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Profil Anak", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -47,14 +50,16 @@ public class MainActivity extends AppCompatActivity {
         menu3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent pindahGizi = new Intent(MainActivity.this, StatusGiziActivity.class);
+                startActivity(pindahGizi);
             }
         });
 
         menu4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent pindahResep = new Intent(MainActivity.this, ResepActivity.class);
+                startActivity(pindahResep);
             }
         });
     }

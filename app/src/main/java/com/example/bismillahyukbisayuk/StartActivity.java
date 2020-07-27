@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class StartActivity extends AppCompatActivity {
 
-    Button masuk, daftar;
+    Button masuk, masukPos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,7 @@ public class StartActivity extends AppCompatActivity {
         setContentView(R.layout.activity_start);
 
         masuk = findViewById(R.id.btn_masuk);
-        daftar = findViewById(R.id.btn_daftar);
+        masukPos = findViewById(R.id.btn_daftar);
 
         masuk.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,10 +27,10 @@ public class StartActivity extends AppCompatActivity {
             }
         });
 
-        daftar.setOnClickListener(new View.OnClickListener() {
+        masukPos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent moveDaftar = new Intent(StartActivity.this, RegisterActivity.class);
+                Intent moveDaftar = new Intent(StartActivity.this, MainActivityPosyandu.class);
                 startActivity(moveDaftar);
             }
         });

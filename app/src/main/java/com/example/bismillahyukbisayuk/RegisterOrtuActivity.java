@@ -12,7 +12,7 @@ import androidx.appcompat.widget.Toolbar;
 public class RegisterOrtuActivity extends AppCompatActivity {
 
     Toolbar toolbar;
-    EditText namaAyah, namaIbu, alamatRumah;
+    EditText nomorKK, namaAyah, namaIbu, alamatRumah;
     Button next_anak;
 
     @Override
@@ -21,6 +21,7 @@ public class RegisterOrtuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register_ortu);
 
         toolbar = findViewById(R.id.toolbar);
+        nomorKK = findViewById(R.id.nomorkk);
         namaAyah = findViewById(R.id.namaayah);
         namaIbu = findViewById(R.id.namaibu);
         alamatRumah = findViewById(R.id.alamatrumah);

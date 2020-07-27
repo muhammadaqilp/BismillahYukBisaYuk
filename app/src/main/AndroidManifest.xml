@@ -9,7 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivityPosyandu"></activity>
+        <activity android:name=".StatusGiziActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".KumpulanResep.Resep3"
+            android:parentActivityName=".ResepActivity" />
+        <activity
+            android:name=".KumpulanResep.Resep2"
+            android:parentActivityName=".ResepActivity" />
+        <activity
+            android:name=".KumpulanResep.Resep1"
+            android:parentActivityName=".ResepActivity" />
+        <activity android:name=".MainActivityPosyandu" />
         <activity
             android:name=".RegisterAnakActivity"
             android:parentActivityName=".RegisterOrtuActivity" />
@@ -17,8 +28,10 @@
             android:name=".RegisterOrtuActivity"
             android:parentActivityName=".RegisterActivity" />
         <activity android:name=".ProfileActivity" />
-        <activity android:name=".parentsProfil"/>
-        <activity android:name=".ResepActivity" />
+        <activity android:name=".parentsProfil" />
+        <activity
+            android:name=".ResepActivity"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".RegisterActivity"
             android:parentActivityName=".MainActivityPosyandu" />

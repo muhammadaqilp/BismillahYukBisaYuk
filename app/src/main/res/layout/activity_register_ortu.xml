@@ -97,18 +97,39 @@
                 android:orientation="horizontal">
 
                 <com.rengwuxian.materialedittext.MaterialEditText
-                    android:id="@+id/namaayah"
+                    android:id="@+id/nomorkk"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/open_sans"
-                    android:hint="Nama Ayah"
+                    android:hint="Nomor Kartu Keluarga"
+                    android:inputType="number"
                     android:padding="4dp"
                     app:met_floatingLabel="normal" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/formemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/formnama"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/namaayah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:hint="Nama Ayah"
+                    android:padding="4dp"
+                    app:met_floatingLabel="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/formkk"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/formnama"
@@ -148,10 +169,31 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/formtelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/formemail"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/notelp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:hint="Nomor Telepon"
+                    android:inputType="phone"
+                    android:padding="4dp"
+                    app:met_floatingLabel="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/formdaftar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/formjk2"
+                android:layout_below="@id/formtelp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="22dp"
                 android:layout_marginRight="8dp"
