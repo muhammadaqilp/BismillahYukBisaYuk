@@ -17,6 +17,7 @@
             android:name=".RegisterOrtuActivity"
             android:parentActivityName=".RegisterActivity" />
         <activity android:name=".ProfileActivity" />
+        <activity android:name=".parentsProfil"/>
         <activity android:name=".ResepActivity" />
         <activity
             android:name=".RegisterActivity"

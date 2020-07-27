@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
     public void setMode(int selectedMode) {
         switch (selectedMode) {
             case R.id.action_about:
-                Intent move = new Intent(MainActivity.this, ProfileActivity.class);
+                Intent move = new Intent(MainActivity.this, parentsProfil.class);
                 startActivity(move);
                 break;
         }
