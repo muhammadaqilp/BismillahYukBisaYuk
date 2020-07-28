@@ -38,11 +38,6 @@ public class InformasiAnakActivity extends AppCompatActivity {
         tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-
-            }
-
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
                 viewPager.setCurrentItem(tab.getPosition());
                 if(tab.getPosition()==0){
                     pagerTabAdapter.notifyDataSetChanged();
@@ -50,6 +45,11 @@ public class InformasiAnakActivity extends AppCompatActivity {
                 if(tab.getPosition()==1){
                     pagerTabAdapter.notifyDataSetChanged();
                 }
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
             }
 
             @Override
