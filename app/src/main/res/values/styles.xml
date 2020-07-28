@@ -115,4 +115,17 @@
         parent="Widget.Design.BottomNavigationView">
         <item name="fontFamily">@font/open_sans</item>
     </style>
+
+    <style name="subheadInfoAnak">
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/blackTextColor</item>
+    </style>
+    <style name="isiInfoAnak">
+        <item name="fontFamily">@font/lato_bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">@color/blackTextColor</item>
+    </style>
+
 </resources>

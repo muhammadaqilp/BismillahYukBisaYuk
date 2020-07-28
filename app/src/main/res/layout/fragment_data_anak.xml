@@ -5,9 +5,167 @@
     android:layout_height="match_parent"
     tools:context=".Fragment.DataAnakBaru">
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/profil_anak"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Data Anak terbaru"/>
+        android:orientation="horizontal"
+        android:background="@drawable/border_profile">
 
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:paddingLeft="30dp"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:src="@drawable/infant" />
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_bold"
+                android:padding="4dp"
+                android:text="Nama lengkap anak"
+                android:textColor="#273EA5"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:padding="4dp"
+                android:text="Jakarta, 18 Agustus 2001"
+                android:textColor="#5A6978"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:padding="4dp"
+                android:text="Laki-laki"
+                android:textColor="#5A6978"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/profil_anak">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_profile"
+        android:orientation="vertical"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+            android:id="@+id/tgl_imunisasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lato"
+            android:letterSpacing="0.02"
+            android:text="Informasi Anak"
+            android:textColor="@color/blackTextColor"
+            android:textSize="16dp"
+            android:typeface="serif"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:letterSpacing="0.02"
+                android:text="7 Maret 2020"
+                android:textColor="@color/blackTextColor"
+                android:textSize="16dp"
+                android:typeface="serif"
+                android:textAlignment="textEnd"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+            <TextView
+                android:id="@+id/beratbadan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Berat Badan"
+                android:fontFamily="@font/open_sans"
+                style="@style/subheadInfoAnak"/>
+            <TextView
+                android:layout_below="@id/beratbadan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5 kg"
+                style="@style/isiInfoAnak"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+            <TextView
+                android:id="@+id/tinggibadan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tinggi badan"
+                android:fontFamily="@font/open_sans"
+                style="@style/subheadInfoAnak"/>
+            <TextView
+                android:layout_below="@id/tinggibadan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="80 cm"
+                style="@style/isiInfoAnak"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+            <TextView
+                android:id="@+id/umur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Umur"
+                android:fontFamily="@font/open_sans"
+                style="@style/subheadInfoAnak"/>
+            <TextView
+                android:layout_below="@id/umur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1 bulan"
+                style="@style/isiInfoAnak"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+            <TextView
+                android:id="@+id/imunisasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Imunisasi"
+                android:fontFamily="@font/open_sans"
+                style="@style/subheadInfoAnak"/>
+            <TextView
+                android:layout_below="@id/imunisasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="suntik sehat"
+                style="@style/isiInfoAnak"/>
+        </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
 </RelativeLayout>
