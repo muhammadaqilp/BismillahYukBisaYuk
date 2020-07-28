@@ -9,7 +9,8 @@
     tools:showIn="@layout/activity_profile">
     <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,7 +18,8 @@
         android:orientation="vertical"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp">
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="60dp">
 
         <RelativeLayout style="@style/profileDetailsLayout">
             <ImageView
@@ -41,7 +43,7 @@
         <RelativeLayout style="@style/profileDetailsLayout">
             <ImageView
                 android:id="@+id/nameImageViewAyah"
-                android:src="@drawable/infant"
+                android:src="@drawable/father"
                 style="@style/profileDetailsImage" />
 
             <TextView
@@ -60,7 +62,7 @@
         <RelativeLayout style="@style/profileDetailsLayout">
             <ImageView
                 android:id="@+id/nameImageViewIbu"
-                android:src="@drawable/infant"
+                android:src="@drawable/mother"
                 style="@style/profileDetailsImage" />
 
             <TextView

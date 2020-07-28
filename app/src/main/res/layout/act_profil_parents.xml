@@ -45,41 +45,49 @@
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
-    <LinearLayout
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/profil_photo"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="80dp"
-            android:src="@drawable/user" />
-
-        <TextView
-            android:id="@+id/tv_nama_parents"
+        android:layout_height="match_parent">
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/lato_bold"
-            android:letterSpacing="0.02"
-            android:text="Nama Keluarga"
-            android:textAlignment="center"
-            android:textColor="@color/basic"
-            android:textSize="24dp"
-            android:textStyle="bold"
-            android:typeface="serif" />
-    </LinearLayout>
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="190dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profil_photo"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="80dp"
+                    android:src="@drawable/user" />
 
-        <include layout="@layout/content_profile" />
-    </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_nama_parents"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:letterSpacing="0.02"
+                    android:text="Nama Keluarga"
+                    android:textAlignment="center"
+                    android:textColor="@color/basic"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include layout="@layout/content_profile" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
     <Button
         android:id="@+id/keluar"
@@ -92,6 +100,7 @@
         android:letterSpacing="0.05"
         android:text="KELUAR"
         android:textColor="#FFFFFF" />
+
 
 </RelativeLayout>
 

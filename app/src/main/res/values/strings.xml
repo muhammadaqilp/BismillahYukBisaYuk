@@ -8,4 +8,6 @@
     <string name="profil_telfon">Nomor Telfon Keluarga</string>
     <string name="profil_KK">Nomor KK Orang tua</string>
     <string name="profil_alamat">Alamat</string>
+
+    <string name="hello_ortu">Halo, Selamat Datang Orang Tua</string>
 </resources>

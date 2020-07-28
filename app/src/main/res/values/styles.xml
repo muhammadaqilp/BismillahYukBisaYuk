@@ -110,4 +110,9 @@
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:minWidth">250dp</item>
     </style>
+
+    <style name="Widget.BottomNavigationView"
+        parent="Widget.Design.BottomNavigationView">
+        <item name="fontFamily">@font/open_sans</item>
+    </style>
 </resources>

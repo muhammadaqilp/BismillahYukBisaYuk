@@ -1,17 +1,16 @@
 package com.example.bismillahyukbisayuk;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.cardview.widget.CardView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
         menu1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Profil Anak", Toast.LENGTH_SHORT).show();
+                Intent pindahProfilAnak= new Intent(MainActivity.this,InformasiAnakActivity.class);
+                startActivity(pindahProfilAnak);
             }
         });
 

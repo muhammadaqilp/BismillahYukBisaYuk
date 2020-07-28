@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".StatusGiziActivity"
-            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".InformasiAnakActivity"></activity>
+        <activity
+            android:name=".StatusGiziActivity"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".KumpulanResep.Resep3"
             android:parentActivityName=".ResepActivity" />

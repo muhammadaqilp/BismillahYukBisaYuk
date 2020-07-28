@@ -46,8 +46,9 @@
                 android:id="@+id/texthello"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
                 android:padding="8dp"
-                android:text="Halo, Selamat Datang Orang Tua" />
+                android:text="@string/hello_ortu" />
 
             <LinearLayout
                 android:id="@+id/nav_atas"
@@ -83,7 +84,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/open_sans"
-                            android:text="Profil"
+                            android:text="Informasi Anak"
                             android:textAlignment="center"
                             android:textColor="@android:color/white" />
 
@@ -117,7 +118,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/open_sans"
-                            android:text="Histori"
+                            android:text="Grafik KMS"
                             android:textColor="@android:color/white" />
 
                     </LinearLayout>
