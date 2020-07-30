@@ -21,9 +21,9 @@ public class PagerTabAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position){
             case 0:
-                return new HistoriAnak();
-            case 1:
                 return new DataAnakBaru();
+            case 1:
+                return new HistoriAnak();
             default:
                 return null;
         }

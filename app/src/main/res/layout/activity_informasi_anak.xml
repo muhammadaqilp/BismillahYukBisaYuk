@@ -28,32 +28,87 @@
     </androidx.appcompat.widget.Toolbar>
 
 
-    <com.google.android.material.tabs.TabLayout
-        android:layout_below="@id/toolbar"
+    <LinearLayout
+        android:id="@+id/profil_anak"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tabLayout"
-        android:background="?android:attr/windowBackground"
-        android:theme="@style/Widget.BottomNavigationView">
+        android:orientation="vertical"
+        android:background="@drawable/border_profile"
+        android:layout_below="@+id/toolbar">
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/foto_anak"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:paddingLeft="30dp"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:src="@drawable/infant" />
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_bold"
+                    android:padding="4dp"
+                    android:text="Nama lengkap anak"
+                    android:textColor="#273EA5"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:padding="4dp"
+                    android:text="Jakarta, 18 Agustus 2001"
+                    android:textColor="#5A6978"
+                    android:textSize="14sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:padding="4dp"
+                    android:text="Laki-laki"
+                    android:textColor="#5A6978"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+        <com.google.android.material.tabs.TabLayout
+            android:layout_below="@id/profil_anak"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/histori"
-            android:text="Histori"/>
+            android:id="@+id/tabLayout"
+            android:background="?android:attr/windowBackground"
+            android:theme="@style/Widget.BottomNavigationView">
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/data_baru"
-            android:text="Data Terbaru"/>
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/data_baru"
+                android:text="Data Terbaru"/>
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/histori"
+                android:text="Histori"/>
 
-    </com.google.android.material.tabs.TabLayout>
+        </com.google.android.material.tabs.TabLayout>
 
-    <androidx.viewpager.widget.ViewPager
-        android:layout_below="@id/tabLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/pager"/>
+        <androidx.viewpager.widget.ViewPager
+            android:layout_below="@id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/pager"/>
+
 
 </RelativeLayout>
