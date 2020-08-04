@@ -162,7 +162,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/open_sans"
-                            android:text="Gizi"
+                            android:text="Berita"
                             android:textAlignment="center"
                             android:textColor="@android:color/white" />
 
