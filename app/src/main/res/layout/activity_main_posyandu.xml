@@ -62,7 +62,7 @@
                     android:layout_height="120dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
-                    app:cardBackgroundColor="#273EA5"
+                    app:cardBackgroundColor="@color/whiteTextColor"
                     app:cardCornerRadius="5dp">
 
                     <LinearLayout
@@ -75,15 +75,15 @@
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             android:padding="10dp"
-                            android:src="@drawable/ic_launcher_background" />
+                            android:src="@drawable/add" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="5dp"
                             android:fontFamily="@font/open_sans"
                             android:text="Register Pengguna"
-                            android:textColor="@android:color/white" />
+                            android:textColor="#273EA5" />
 
                     </LinearLayout>
 
@@ -95,7 +95,7 @@
                     android:layout_height="120dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
-                    app:cardBackgroundColor="#273EA5"
+                    app:cardBackgroundColor="@color/whiteTextColor"
                     app:cardCornerRadius="5dp">
 
                     <LinearLayout
@@ -108,15 +108,15 @@
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             android:padding="10dp"
-                            android:src="@drawable/ic_launcher_background" />
+                            android:src="@drawable/monitoring" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="5dp"
                             android:fontFamily="@font/open_sans"
                             android:text="Monitoring Anak"
-                            android:textColor="@android:color/white" />
+                            android:textColor="#273EA5" />
 
                     </LinearLayout>
 
@@ -138,7 +138,7 @@
                     android:layout_height="120dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
-                    app:cardBackgroundColor="#273EA5"
+                    app:cardBackgroundColor="@color/whiteTextColor"
                     app:cardCornerRadius="5dp">
 
                     <LinearLayout
@@ -151,15 +151,15 @@
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             android:padding="10dp"
-                            android:src="@drawable/ic_launcher_background" />
+                            android:src="@drawable/search" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="5dp"
                             android:fontFamily="@font/open_sans"
                             android:text="Lihat Data Pengguna"
-                            android:textColor="@android:color/white" />
+                            android:textColor="#273EA5" />
 
                     </LinearLayout>
 
