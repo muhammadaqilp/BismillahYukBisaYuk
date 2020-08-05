@@ -10,7 +10,7 @@ import android.view.View;
 
 public class MainActivityPosyandu extends AppCompatActivity {
 
-    CardView menu1, menu2;
+    CardView menu1, menu2, menu3, menu4, menu5;
     Toolbar toolbar;
 
     @Override
@@ -23,6 +23,9 @@ public class MainActivityPosyandu extends AppCompatActivity {
 
         menu1 = findViewById(R.id.nav_menu1);
         menu2 = findViewById(R.id.nav_menu2);
+        menu3 = findViewById(R.id.nav_menu3);
+        menu4 = findViewById(R.id.nav_menu4);
+        menu5 = findViewById(R.id.nav_menu5);
 
         menu1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,6 +36,27 @@ public class MainActivityPosyandu extends AppCompatActivity {
         });
 
         menu2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        menu3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        menu4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        menu5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 

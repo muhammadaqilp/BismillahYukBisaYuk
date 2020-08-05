@@ -114,32 +114,4 @@
             android:fontFamily="@font/lato_bold"/>
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/formmasuk"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:background="#C0CCDA"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/lato"
-            android:text="Belum Punya Akun?"
-            android:textColor="#343F4B"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/daftarsekarang"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:fontFamily="@font/lato_bold"
-            android:text="Daftar Sekarang"
-            android:textColor="#273EA5"
-            android:textSize="18sp" />
-    </LinearLayout>
-
 </RelativeLayout>
