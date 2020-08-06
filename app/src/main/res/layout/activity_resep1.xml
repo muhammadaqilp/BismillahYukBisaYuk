@@ -28,7 +28,7 @@
                     android:fontFamily="@font/lato_bold"
                     android:letterSpacing="0.05"
                     android:text="Ini Resep 1"
-                    android:textColor="#273EA5"
+                    android:textColor="@color/basic"
                     android:textSize="20sp" />
 
             </RelativeLayout>

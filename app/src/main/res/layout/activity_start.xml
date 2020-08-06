@@ -22,7 +22,7 @@
         android:text="Masuk User"
         android:id="@+id/btn_masuk"
         android:layout_marginTop="15dp"
-        android:textColor="#273EA5"
+        android:textColor="@color/basic"
         android:background="@drawable/shape1"/>
 
     <Button
@@ -31,7 +31,7 @@
         android:text="Masuk Posyandu"
         android:id="@+id/btn_daftar"
         android:layout_marginTop="15dp"
-        android:textColor="#273EA5"
+        android:textColor="@color/basic"
         android:background="@drawable/shape1"/>
 
 </LinearLayout>

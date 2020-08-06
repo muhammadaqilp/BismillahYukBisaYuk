@@ -128,4 +128,12 @@
         <item name="android:textColor">@color/blackTextColor</item>
     </style>
 
+    <style name="main">
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textColor">@color/basic</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
 </resources>

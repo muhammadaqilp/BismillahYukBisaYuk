@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#6200EE</color>
-    <color name="basic">#273EA5</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#273EA5</color>
+    <color name="basic">#fd4e4e</color>
+    <color name="colorPrimaryDark">#72A8BC</color>
+    <color name="colorAccent">#72A8BC</color>
     <color name="colorSubTitle">#757575</color>
 
     <color name="profilePrimaryDark">#FF3B30</color>
@@ -12,4 +12,5 @@
     <color name="profileBackground">#fff</color>
     <color name="blackTextColor">#000</color>
     <color name="profileEditTextColor">#707070</color>
+    <color name="button">#227AA0</color>
 </resources>

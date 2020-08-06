@@ -16,7 +16,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FF273EA5">
+            android:background="@color/basic">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -84,11 +84,9 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:fontFamily="@font/open_sans"
+                            style="@style/main"
                             android:text="Informasi Anak"
-                            android:textAlignment="center"
-                            android:textColor="#273EA5" />
+                             />
 
                     </LinearLayout>
 
@@ -118,10 +116,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:fontFamily="@font/open_sans"
-                            android:text="Grafik KMS"
-                            android:textColor="#273EA5" />
+                            style="@style/main"
+                            android:text="Grafik KMS" />
 
                     </LinearLayout>
 
@@ -161,12 +157,9 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_marginTop="5dp"
-                            android:fontFamily="@font/open_sans"
+                            style="@style/main"
                             android:text="Berita"
-                            android:textAlignment="center"
-                            android:textColor="#273EA5" />
+                             />
 
                     </LinearLayout>
 
@@ -196,10 +189,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:fontFamily="@font/open_sans"
-                            android:text="Resep"
-                            android:textColor="#273EA5" />
+                            style="@style/main"
+                            android:text="Resep" />
 
                     </LinearLayout>
 

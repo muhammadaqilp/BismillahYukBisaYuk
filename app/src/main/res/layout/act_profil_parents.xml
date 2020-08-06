@@ -38,7 +38,7 @@
                     android:fontFamily="@font/lato_bold"
                     android:letterSpacing="0.05"
                     android:text="Profil Keluarga"
-                    android:textColor="#273EA5"
+                    android:textColor="@color/basic"
                     android:textSize="20sp" />
 
             </RelativeLayout>
@@ -95,7 +95,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="20dp"
-        android:background="#273EA5"
+        android:background="@color/button"
         android:fontFamily="@font/lato_bold"
         android:letterSpacing="0.05"
         android:text="KELUAR"

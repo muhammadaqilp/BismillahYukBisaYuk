@@ -28,7 +28,7 @@
                     android:fontFamily="@font/lato_bold"
                     android:letterSpacing="0.05"
                     android:text="Resep"
-                    android:textColor="#273EA5"
+                    android:textColor="@color/basic"
                     android:textSize="20sp" />
 
             </RelativeLayout>
@@ -67,7 +67,7 @@
                         android:fontFamily="@font/lato"
                         android:gravity="center"
                         android:text="Kumpulan Resep Masakan"
-                        android:textColor="#273EA5"
+                        android:textColor="@color/basic"
                         android:textSize="20sp"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -109,7 +109,7 @@
                             android:layout_height="100dp"
                             android:layout_gravity="center_vertical"
                             android:padding="10dp"
-                            android:src="@drawable/ic_launcher_background" />
+                            android:src="@drawable/ic_food" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -156,7 +156,7 @@
                             android:layout_height="100dp"
                             android:layout_gravity="center_vertical"
                             android:padding="10dp"
-                            android:src="@drawable/ic_launcher_background" />
+                            android:src="@drawable/ic_chicken" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -203,7 +203,7 @@
                             android:layout_height="100dp"
                             android:layout_gravity="center_vertical"
                             android:padding="10dp"
-                            android:src="@drawable/ic_launcher_background" />
+                            android:src="@drawable/ic_lunch" />
 
                         <LinearLayout
                             android:layout_width="match_parent"

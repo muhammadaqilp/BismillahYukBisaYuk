@@ -29,7 +29,7 @@
                     android:fontFamily="@font/lato_bold"
                     android:letterSpacing="0.05"
                     android:text="Daftar"
-                    android:textColor="#273EA5"
+                    android:textColor="@color/basic"
                     android:textSize="20sp" />
 
             </RelativeLayout>
@@ -70,7 +70,7 @@
                         android:gravity="center"
                         android:letterSpacing="0.1"
                         android:text="Selamat Datang"
-                        android:textColor="#273EA5"
+                        android:textColor="@color/basic"
                         android:textSize="24sp"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -149,8 +149,11 @@
                     android:id="@+id/btnpicktgl"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@color/button"
                     android:text="pick tgl lahir"
-                    android:layout_marginLeft="18dp"/>
+                    android:padding="10dp"
+                    android:textColor="@color/whiteTextColor"
+                    android:layout_marginStart="18dp"/>
 
             </LinearLayout>
 
@@ -263,7 +266,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/shape1"
-                    android:backgroundTint="#227AA0"
+                    android:backgroundTint="@color/button"
                     android:fontFamily="@font/lato"
                     android:letterSpacing="0.05"
                     android:text="DAFTAR SEKARANG"
