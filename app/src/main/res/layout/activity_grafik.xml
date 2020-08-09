@@ -24,7 +24,7 @@
                 android:fontFamily="@font/lato_bold"
                 android:letterSpacing="0.05"
                 android:text="Grafik KMS"
-                android:textColor="#273EA5"
+                android:textColor="@color/basic"
                 android:textSize="20sp" />
 
         </RelativeLayout>

@@ -55,6 +55,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/nama_lengkap"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/lato_bold"
@@ -64,6 +65,7 @@
                     android:textSize="16sp" />
 
                 <TextView
+                    android:id="@+id/tempattgl"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/open_sans"
@@ -72,6 +74,7 @@
                     android:textColor="#5A6978"
                     android:textSize="14sp" />
                 <TextView
+                    android:id="@+id/jeniskelamin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/open_sans"

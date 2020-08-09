@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "809644180956",
+    "firebase_url": "https://bismillahyukbisayuk.firebaseio.com",
+    "project_id": "bismillahyukbisayuk",
+    "storage_bucket": "bismillahyukbisayuk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809644180956:android:f47cf01ead8dd7c539bb19",
+        "android_client_info": {
+          "package_name": "com.example.bismillahyukbisayuk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809644180956-12mqejrv971cd8kc14iea6trelq419t4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfcE8Ghg5bTvg61dc-g66OLcAAN7hloCY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "809644180956-12mqejrv971cd8kc14iea6trelq419t4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

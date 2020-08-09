@@ -250,6 +250,15 @@
 
             </LinearLayout>
 
+            <TextView
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LOGOUT"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"/>
+
         </LinearLayout>
+
     </com.google.android.material.appbar.AppBarLayout>
 </RelativeLayout>

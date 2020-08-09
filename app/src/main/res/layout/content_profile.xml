@@ -34,9 +34,12 @@
                 style="@style/profileDetailsTextMain" />
 
             <TextView
-                android:text="Siti"
+                android:id="@+id/nama_anak"
+                style="@style/profileDetailsMiniText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/nameImageView"
-                style="@style/profileDetailsMiniText" />
+                android:text="Siti" />
 
         </RelativeLayout>
 
@@ -53,6 +56,7 @@
                 style="@style/profileDetailsTextMain" />
 
             <TextView
+                android:id="@+id/nama_ayah"
                 android:text="Siapa Kek"
                 android:layout_toRightOf="@id/nameImageViewAyah"
                 style="@style/profileDetailsMiniText" />
@@ -72,6 +76,7 @@
                 style="@style/profileDetailsTextMain" />
 
             <TextView
+                android:id="@+id/nama_ibu"
                 android:text="Siapa ya"
                 android:layout_toRightOf="@id/nameImageViewIbu"
                 style="@style/profileDetailsMiniText" />
@@ -91,6 +96,7 @@
                 style="@style/profileDetailsTextMain"/>
 
             <TextView
+                android:id="@+id/nomor_telp"
                 android:text="+91-8129999999"
                 android:layout_toRightOf="@id/mobileImageView"
                 style="@style/profileDetailsMiniText" />
@@ -110,6 +116,7 @@
                 style="@style/profileDetailsTextMain" />
 
             <TextView
+                android:id="@+id/nomor_kk"
                 android:text="1180910000223"
                 android:layout_toRightOf="@id/emailImageView"
                 style="@style/profileDetailsMiniText" />
@@ -129,6 +136,7 @@
                 style="@style/profileDetailsTextMain" />
 
             <TextView
+                android:id="@+id/alamat_rumah"
                 android:text="Avenue 2nd Street NW SY."
                 android:layout_toRightOf="@id/addressImageView"
                 style="@style/profileDetailsMiniText" />

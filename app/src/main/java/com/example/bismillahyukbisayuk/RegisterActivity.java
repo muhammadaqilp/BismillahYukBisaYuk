@@ -34,10 +34,30 @@ public class RegisterActivity extends AppCompatActivity {
         next_ortu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent nextOrtu = new Intent(RegisterActivity.this, RegisterOrtuActivity.class);
-                startActivity(nextOrtu);
+                nextPage();
             }
         });
 
+    }
+
+    private void nextPage() {
+        String usname = username.getText().toString();
+        String pass = password.getText().toString();
+
+        if (usname.isEmpty()){
+            username.setError("Username is required");
+            username.requestFocus();
+            return;
+        }
+        if (pass.isEmpty()){
+            password.setError("Password is required");
+            password.requestFocus();
+            return;
+        }
+
+        Intent nextOrtu = new Intent(RegisterActivity.this, RegisterOrtuActivity.class);
+        nextOrtu.putExtra("username", usname);
+        nextOrtu.putExtra("password", pass);
+        startActivity(nextOrtu);
     }
 }

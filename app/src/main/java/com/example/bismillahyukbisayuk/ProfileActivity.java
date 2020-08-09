@@ -10,6 +10,8 @@ import androidx.appcompat.widget.Toolbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class ProfileActivity extends AppCompatActivity {
 
     @Override
@@ -19,12 +21,13 @@ public class ProfileActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar_layout);
         setSupportActionBar(toolbar);
 
-        TextView backhome = findViewById(R.id.backtohome);
-        backhome.setOnClickListener(new View.OnClickListener() {
+        TextView logout = findViewById(R.id.backtohome);
+        logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent home = new Intent(ProfileActivity.this, MainActivity.class);
-                startActivity(home);
+                FirebaseAuth.getInstance().signOut();
+                startActivity(new Intent(ProfileActivity.this, LoginActivity.class)
+                        .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
             }
         });
     }

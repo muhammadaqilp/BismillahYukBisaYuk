@@ -12,11 +12,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class MainActivity extends AppCompatActivity {
 
     TextView textHello;
     CardView menu1, menu2, menu3, menu4;
     Toolbar toolbar;
+    FirebaseUser firebaseUser;
+    FirebaseDatabase firebaseDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,10 +38,14 @@ public class MainActivity extends AppCompatActivity {
         menu3 = findViewById(R.id.nav_menu3);
         menu4 = findViewById(R.id.nav_menu4);
 
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+
         menu1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent pindahProfilAnak= new Intent(MainActivity.this,InformasiAnakActivity.class);
+                pindahProfilAnak.putExtra("profileid", FirebaseAuth.getInstance().getCurrentUser().getUid());
                 startActivity(pindahProfilAnak);
             }
         });
@@ -80,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
         switch (selectedMode) {
             case R.id.action_about:
                 Intent move = new Intent(MainActivity.this, parentsProfil.class);
+                move.putExtra("profileid", FirebaseAuth.getInstance().getCurrentUser().getUid());
                 startActivity(move);
                 break;
         }
