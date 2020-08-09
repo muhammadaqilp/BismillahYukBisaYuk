@@ -28,11 +28,23 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:fontFamily="@font/lato"
-                    android:letterSpacing="0.1"
-                    android:text="Selamat Datang"
+                    android:letterSpacing="0.05"
+                    android:text="Selamat Datang di"
                     android:textColor="#FFFFFF"
-                    android:textSize="27sp" />
+                    android:textSize="21sp" />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="195dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_toRightOf="@+id/hello"
+                    android:fontFamily="@font/lato_bold"
+                    android:letterSpacing="0.05"
+                    android:text="Nutrimo"
+                    android:textColor="#72A8BC"
+                    android:textSize="21sp" />
             </RelativeLayout>
         </androidx.appcompat.widget.Toolbar>
 
