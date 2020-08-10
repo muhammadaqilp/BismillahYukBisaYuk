@@ -49,8 +49,7 @@
             android:name=".RegisterActivity"
             android:parentActivityName=".MainActivityPosyandu" />
         <activity
-            android:name=".LoginActivity"
-            android:parentActivityName=".StartActivity" />
+            android:name=".LoginActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".StartActivity">
             <intent-filter>

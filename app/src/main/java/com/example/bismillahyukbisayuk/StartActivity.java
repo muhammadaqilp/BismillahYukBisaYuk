@@ -19,7 +19,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class StartActivity extends AppCompatActivity {
 
-    Button masuk, masukPos;
+    Button masuk;
     FirebaseUser firebaseUser;
     FirebaseAuth auth;
     FirebaseDatabase firebaseDatabase;
@@ -53,7 +53,6 @@ public class StartActivity extends AppCompatActivity {
         }
 
         masuk = findViewById(R.id.btn_masuk);
-        masukPos = findViewById(R.id.btn_daftar);
 
         masuk.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,14 +61,6 @@ public class StartActivity extends AppCompatActivity {
                 startActivity(moveMasuk);
             }
         });
-
-//        masukPos.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent moveDaftar = new Intent(StartActivity.this, MainActivityPosyandu.class);
-//                startActivity(moveDaftar);
-//            }
-//        });
 
     }
 

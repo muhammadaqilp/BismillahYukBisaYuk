@@ -19,17 +19,8 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Masuk User"
+        android:text="Masuk"
         android:id="@+id/btn_masuk"
-        android:layout_marginTop="15dp"
-        android:textColor="@color/basic"
-        android:background="@drawable/shape1"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Masuk Posyandu"
-        android:id="@+id/btn_daftar"
         android:layout_marginTop="15dp"
         android:textColor="@color/basic"
         android:background="@drawable/shape1"/>
