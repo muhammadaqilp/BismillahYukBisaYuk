@@ -23,7 +23,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class parentsProfil extends AppCompatActivity {
 
-    TextView namaAnak, namaAyah, namaIbu, nomorTelp, nomorKK, alamatRumah;
+    TextView namaKeluarga, namaAnak, namaAyah, namaIbu, nomorTelp, nomorKK, alamatRumah;
     FirebaseUser firebaseUser;
     FirebaseDatabase firebaseDatabase;
     String profileid;
@@ -35,6 +35,7 @@ public class parentsProfil extends AppCompatActivity {
         setContentView(R.layout.act_profil_parents);
         setActionBarTitle(title);
 
+        namaKeluarga = findViewById(R.id.tv_nama_parents);
         namaAnak = findViewById(R.id.nama_anak);
         namaAyah = findViewById(R.id.nama_ayah);
         namaIbu = findViewById(R.id.nama_ibu);
@@ -76,6 +77,7 @@ public class parentsProfil extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 User user = dataSnapshot.getValue(User.class);
+                namaKeluarga.setText("Keluarga "+user.getNamaAyah());
                 namaAnak.setText(user.getNamaAnak());
                 namaAyah.setText(user.getNamaAyah());
                 namaIbu.setText(user.getNamaIbu());
