@@ -1,13 +1,13 @@
 package com.example.bismillahyukbisayuk;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.cardview.widget.CardView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
 
 import com.example.bismillahyukbisayuk.PushNotification.MainActivityPush;
 import com.google.firebase.auth.FirebaseAuth;
@@ -53,7 +53,8 @@ public class MainActivityPosyandu extends AppCompatActivity {
         menu2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent MonitoringActivity=new Intent(MainActivityPosyandu.this, MonitoringActivity.class);
+                startActivity(MonitoringActivity);
             }
         });
 

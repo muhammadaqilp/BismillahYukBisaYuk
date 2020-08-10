@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MonitoringActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/hello"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="@font/lato_bold"
+                    android:letterSpacing="0.05"
+                    android:text="Tambahkan Data Perkembangan"
+                    android:textColor="@color/basic"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_below="@+id/bar"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp">
+
+    <LinearLayout
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/infant" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/tempatlahir"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans"
+            android:hint="Nama Anak"
+            android:padding="2dp"
+            app:met_floatingLabel="normal" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tgl_lahir"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/ic_cal_lahir" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/tv_tgl_lahir"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans"
+            android:text="Tanggal lahir"
+            android:padding="2dp"
+            app:met_floatingLabel="normal" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tgl_rekam"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/ic_cal_rekam" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/tv_tgl_rekam"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans"
+            android:text="Tanggal rekam"
+            android:padding="2dp"
+            app:met_floatingLabel="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/berat_badan"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/bar"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/ic_weight" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/tv_berat_badan"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans"
+            android:hint="Berat badan (kg)"
+            android:padding="2dp"
+            app:met_floatingLabel="normal" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tinggi_badan"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/ic_height" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/tv_tinggi_badan"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans"
+            android:hint="Tinggi Badan (cm)"
+            android:padding="2dp"
+            app:met_floatingLabel="normal" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lingkar_kepala"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/ic_circle" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/tv_lingkar_kepala"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans"
+            android:hint="lingkar kepala (cm)"
+            android:padding="2dp"
+            app:met_floatingLabel="normal" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lingkar_lengan"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/bar"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/arm" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/tv_lingkar_lengan"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans"
+            android:hint="Lingkar lengan (cm)"
+            android:padding="2dp"
+            app:met_floatingLabel="normal" />
+    </LinearLayout>
+</LinearLayout>
+    <Button
+        android:id="@+id/keluar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/button"
+        android:fontFamily="@font/lato_bold"
+        android:letterSpacing="0.05"
+        android:text="Simpan"
+        android:textColor="#FFFFFF" />
+</RelativeLayout>

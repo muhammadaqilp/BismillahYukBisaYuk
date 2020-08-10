@@ -60,7 +60,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/lato_bold"
                     android:padding="4dp"
-                    android:text="Nama lengkap anak"
+                    android:text="Yolanda Mutia"
                     android:textColor="@color/basic"
                     android:textSize="16sp" />
 
@@ -79,7 +79,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/open_sans"
                     android:padding="4dp"
-                    android:text="Laki-laki"
+                    android:text="Perempuan"
                     android:textColor="#5A6978"
                     android:textSize="14sp" />
             </LinearLayout>
