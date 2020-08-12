@@ -5,6 +5,8 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -13,8 +15,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MonitoringActivity"
-            android:parentActivityName=".MainActivityPosyandu"/>
+        <activity android:name=".LihatDataActivity"></activity>
+        <activity android:name=".InputResepActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".MonitoringActivity2"
+            android:parentActivityName=".MonitoringActivity" />
+        <activity
+            android:name=".MonitoringActivity"
+            android:parentActivityName=".MainActivityPosyandu" />
         <activity
             android:name=".PushNotification.MainActivityPush"
             android:parentActivityName=".MainActivityPosyandu" />
@@ -51,8 +62,7 @@
         <activity
             android:name=".RegisterActivity"
             android:parentActivityName=".MainActivityPosyandu" />
-        <activity
-            android:name=".LoginActivity" />
+        <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".StartActivity">
             <intent-filter>

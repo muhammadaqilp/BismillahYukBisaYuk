@@ -53,7 +53,7 @@ public class MainActivityPosyandu extends AppCompatActivity {
         menu2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent MonitoringActivity=new Intent(MainActivityPosyandu.this, MonitoringActivity.class);
+                Intent MonitoringActivity = new Intent(MainActivityPosyandu.this, MonitoringActivity.class);
                 startActivity(MonitoringActivity);
             }
         });
@@ -61,14 +61,16 @@ public class MainActivityPosyandu extends AppCompatActivity {
         menu3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent lihatData = new Intent(MainActivityPosyandu.this, LihatDataActivity.class);
+                startActivity(lihatData);
             }
         });
 
         menu4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent resep = new Intent(MainActivityPosyandu.this, InputResepActivity.class);
+                startActivity(resep);
             }
         });
 

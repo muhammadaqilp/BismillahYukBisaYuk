@@ -3,6 +3,7 @@ package com.example.bismillahyukbisayuk.Model;
 public class User {
 
     private String id;
+    private String username;
     private String nomorKK;
     private String namaAyah;
     private String namaIbu;
@@ -17,8 +18,9 @@ public class User {
     private String jenisKelamin;
     private String level;
 
-    public User(String id, String nomorKK, String namaAyah, String namaIbu, String alamatRumah, String nomorTelepon, String namaAnak, String tempatLahir, String tanggalLahir, String usia, String tinggiBadan, String beratBadan, String jenisKelamin, String level) {
+    public User(String id, String username, String nomorKK, String namaAyah, String namaIbu, String alamatRumah, String nomorTelepon, String namaAnak, String tempatLahir, String tanggalLahir, String usia, String tinggiBadan, String beratBadan, String jenisKelamin, String level) {
         this.id = id;
+        this.username = username;
         this.nomorKK = nomorKK;
         this.namaAyah = namaAyah;
         this.namaIbu = namaIbu;
@@ -43,6 +45,14 @@ public class User {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getNomorKK() {

@@ -1,16 +1,17 @@
 package com.example.bismillahyukbisayuk;
 
-import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.widget.EditText;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.widget.EditText;
+
+import com.example.bismillahyukbisayuk.Adapter.LihatDataAdapter;
 import com.example.bismillahyukbisayuk.Adapter.SearchAdapter;
 import com.example.bismillahyukbisayuk.Model.User;
 import com.google.firebase.database.DataSnapshot;
@@ -23,10 +24,10 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MonitoringActivity extends AppCompatActivity {
+public class LihatDataActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
-    private SearchAdapter searchAdapter;
+    private LihatDataAdapter lihatDataAdapter;
     private List<User> mUser;
 
     EditText searchBar;
@@ -36,7 +37,7 @@ public class MonitoringActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_monitoring);
+        setContentView(R.layout.activity_lihat_data);
 
         toolbar = findViewById(R.id.toolbar);
 
@@ -50,8 +51,8 @@ public class MonitoringActivity extends AppCompatActivity {
         searchBar = findViewById(R.id.search_bar);
 
         mUser = new ArrayList<>();
-        searchAdapter = new SearchAdapter(mUser);
-        recyclerView.setAdapter(searchAdapter);
+        lihatDataAdapter = new LihatDataAdapter(mUser);
+        recyclerView.setAdapter(lihatDataAdapter);
 
         readUser();
         searchBar.addTextChangedListener(new TextWatcher() {
@@ -71,7 +72,6 @@ public class MonitoringActivity extends AppCompatActivity {
             }
         });
     }
-
     private void searchUser(String s) {
 
         Query query = FirebaseDatabase.getInstance().getReference("Users").orderByChild("username")
@@ -88,7 +88,7 @@ public class MonitoringActivity extends AppCompatActivity {
                         mUser.add(user);
                     }
                 }
-                searchAdapter.notifyDataSetChanged();
+                lihatDataAdapter.notifyDataSetChanged();
             }
 
             @Override
@@ -112,7 +112,7 @@ public class MonitoringActivity extends AppCompatActivity {
                             mUser.add(user);
                         }
                     }
-                    searchAdapter.notifyDataSetChanged();
+                    lihatDataAdapter.notifyDataSetChanged();
                 }
             }
 
