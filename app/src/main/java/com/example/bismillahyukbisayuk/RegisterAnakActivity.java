@@ -41,7 +41,7 @@ public class RegisterAnakActivity extends AppCompatActivity {
     RadioGroup radioGroup;
     RadioButton radioButton;
     DatePickerDialog.OnDateSetListener dateSetListener1;
-    String usia, date;
+    String usia, date, usiaBulan;
 
     FirebaseAuth auth;
     DatabaseReference reference;
@@ -138,6 +138,9 @@ public class RegisterAnakActivity extends AppCompatActivity {
                         int hari = period.getDays();
 
                         usia = tahun + " Tahun " + bulan + " Bulan " + hari + " Hari";
+                        int u = (tahun*12)+bulan;
+                        usiaBulan = String.valueOf(u);
+
                     } else {
                         Toast.makeText(RegisterAnakActivity.this, "g", Toast.LENGTH_SHORT).show();
                     }

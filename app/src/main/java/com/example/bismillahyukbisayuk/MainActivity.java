@@ -70,7 +70,8 @@ public class MainActivity extends AppCompatActivity {
         menu2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent pindahGrafik = new Intent(MainActivity.this, GrafikActivity.class);
+                startActivity(pindahGrafik);
             }
         });
 
