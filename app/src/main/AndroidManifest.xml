@@ -15,8 +15,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LihatDataActivity"></activity>
-        <activity android:name=".InputResepActivity" />
+        <activity android:name=".ResepDetailActivity"
+            android:parentActivityName=".ResepActivity"/>
+        <activity android:name=".LihatDataActivity"
+            android:parentActivityName=".MainActivityPosyandu"/>
+        <activity android:name=".InputResepActivity"
+            />
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Theme.AppCompat" />

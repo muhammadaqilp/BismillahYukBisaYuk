@@ -35,19 +35,9 @@
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/bar">
-
-        <com.google.android.material.appbar.AppBarLayout
-            android:id="@+id/bar2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?android:attr/windowBackground">
-
             <LinearLayout
                 android:id="@+id/judulll"
+                android:layout_below="@id/bar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -84,156 +74,21 @@
 
             </LinearLayout>
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/judulll"
                 android:layout_marginTop="8dp"
                 android:clipToPadding="false"
                 android:orientation="vertical">
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/menu1"
+                <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:clickable="true">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:layout_gravity="center_vertical"
-                            android:padding="10dp"
-                            android:src="@drawable/ic_food" />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/lato_bold"
-                                android:padding="4dp"
-                                android:text="Menu 1"
-                                android:textColor="#030303"
-                                android:textSize="16sp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/open_sans"
-                                android:padding="4dp"
-                                android:text="Yuk Pelajari Bagaimana Cara Memasak Menu 1"
-                                android:textColor="#343F4B"
-                                android:textSize="14sp" />
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/menu2"
-                    android:layout_margin="10dp"
-                    android:clickable="true">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:layout_gravity="center_vertical"
-                            android:padding="10dp"
-                            android:src="@drawable/ic_chicken" />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_gravity="center_vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/lato_bold"
-                                android:padding="4dp"
-                                android:text="Menu 2"
-                                android:textColor="#030303"
-                                android:textSize="16sp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/open_sans"
-                                android:padding="4dp"
-                                android:text="Yuk Pelajari Bagaimana Cara Memasak Menu 2"
-                                android:textColor="#343F4B"
-                                android:textSize="14sp" />
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:id="@+id/menu3"
-                    android:clickable="true">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:layout_gravity="center_vertical"
-                            android:padding="10dp"
-                            android:src="@drawable/ic_lunch" />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_gravity="center_vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/lato_bold"
-                                android:padding="4dp"
-                                android:text="Menu 3"
-                                android:textColor="#030303"
-                                android:textSize="16sp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/open_sans"
-                                android:padding="4dp"
-                                android:text="TYuk Pelajari Bagaimana Cara Memasak Menu 3"
-                                android:textColor="#343F4B"
-                                android:textSize="14sp" />
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
+                    android:layout_below="@+id/bar"
+                    tools:listitem="@layout/resep_item"
+                    android:id="@+id/recycler_view"/>
 
             </LinearLayout>
-        </com.google.android.material.appbar.AppBarLayout>
-    </ScrollView>
+
 </RelativeLayout>
