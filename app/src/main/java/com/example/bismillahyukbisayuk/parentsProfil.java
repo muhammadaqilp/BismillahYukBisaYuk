@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import com.bumptech.glide.Glide;
 import com.example.bismillahyukbisayuk.Model.User;
@@ -27,15 +28,22 @@ public class parentsProfil extends AppCompatActivity {
     FirebaseUser firebaseUser;
     FirebaseDatabase firebaseDatabase;
     String profileid;
+    Toolbar toolbar;
 
     private String title="Profil Keluarga";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.act_profil_parents);
-        setActionBarTitle(title);
+//        setActionBarTitle(title);
 
         namaKeluarga = findViewById(R.id.tv_nama_parents);
+        toolbar = findViewById(R.id.toolbar);
+
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         namaAnak = findViewById(R.id.nama_anak);
         namaAyah = findViewById(R.id.nama_ayah);
         namaIbu = findViewById(R.id.nama_ibu);
@@ -49,15 +57,6 @@ public class parentsProfil extends AppCompatActivity {
         profileid = getIntent().getStringExtra("profileid");
 
         userInfo();
-
-        ImageButton backhome = findViewById(R.id.btn_back);
-        backhome.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent home = new Intent(parentsProfil.this, MainActivity.class);
-                startActivity(home);
-            }
-        });
 
         Button keluar = findViewById(R.id.keluar);
         keluar.setOnClickListener(new View.OnClickListener() {
@@ -99,6 +98,7 @@ public class parentsProfil extends AppCompatActivity {
         if (getSupportActionBar()!=null)
         {
             getSupportActionBar().setTitle(title);
+            getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
     }
 }

@@ -21,20 +21,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <ImageButton
-                    android:id="@+id/btn_back"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/back_to_home_button" />
-
                 <TextView
                     android:id="@+id/hello_profil"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
-                    android:layout_marginStart="70dp"
-                    android:layout_marginTop="11dp"
-                    android:layout_toRightOf="@+id/btn_back"
                     android:fontFamily="@font/lato_bold"
                     android:letterSpacing="0.05"
                     android:text="Profil Keluarga"
@@ -49,10 +40,12 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

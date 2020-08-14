@@ -81,6 +81,9 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="8dp"
             android:fontFamily="@font/open_sans"
+            android:imeOptions="actionNext"
+            android:maxLines="1"
+            android:inputType="text"
             android:hint="Username (NIK)"
             android:padding="4dp"
             app:met_floatingLabel="normal" />
@@ -89,6 +92,7 @@
             android:id="@+id/password"
             android:layout_marginTop="4dp"
             android:layout_width="match_parent"
+            android:imeOptions="actionNext"
             android:layout_height="wrap_content"
             android:fontFamily="@font/open_sans"
             android:inputType="textPassword"

@@ -102,7 +102,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/open_sans"
+                    android:maxLines="1"
+                    android:inputType="text"
                     android:hint="Nama Lengkap Anak"
+                    android:imeOptions="actionNext"
                     android:padding="4dp"
                     app:met_floatingLabel="normal" />
             </LinearLayout>
@@ -122,7 +125,10 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/open_sans"
                     android:hint="Tempat Lahir"
+                    android:imeOptions="actionNext"
                     android:padding="4dp"
+                    android:maxLines="1"
+                    android:inputType="text"
                     app:met_floatingLabel="normal" />
 
             </LinearLayout>
@@ -142,6 +148,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/open_sans"
                     android:hint="Tanggal Lahir"
+                    android:imeOptions="actionNext"
                     android:padding="4dp"
                     app:met_floatingLabel="normal" />
 
@@ -172,6 +179,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/open_sans"
                     android:hint="Tinggi Badan (cm)"
+                    android:imeOptions="actionNext"
                     android:padding="4dp"
                     android:inputType="number"
                     app:met_floatingLabel="normal" />
@@ -193,8 +201,9 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/open_sans"
                     android:hint="Berat Badan (Kg)"
+                    android:imeOptions="actionNext"
                     android:padding="4dp"
-                    android:inputType="number"
+                    android:inputType="numberDecimal"
                     app:met_floatingLabel="normal" />
             </LinearLayout>
 

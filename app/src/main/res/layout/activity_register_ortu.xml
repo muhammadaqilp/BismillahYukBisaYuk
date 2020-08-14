@@ -101,6 +101,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
+                    android:imeOptions="actionNext"
                     android:fontFamily="@font/open_sans"
                     android:hint="Nomor Kartu Keluarga"
                     android:inputType="number"
@@ -123,6 +124,9 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/open_sans"
                     android:hint="Nama Ayah"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:imeOptions="actionNext"
                     android:padding="4dp"
                     app:met_floatingLabel="normal" />
 
@@ -144,6 +148,9 @@
                     android:fontFamily="@font/open_sans"
                     android:hint="Nama Ibu"
                     android:padding="4dp"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:imeOptions="actionNext"
                     app:met_floatingLabel="normal" />
 
             </LinearLayout>
@@ -163,6 +170,9 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/open_sans"
                     android:hint="Alamat Rumah"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:inputType="text"
                     android:padding="4dp"
                     app:met_floatingLabel="normal" />
 
@@ -184,6 +194,7 @@
                     android:fontFamily="@font/open_sans"
                     android:hint="Nomor Telepon"
                     android:inputType="phone"
+                    android:imeOptions="actionNext"
                     android:padding="4dp"
                     app:met_floatingLabel="normal" />
 
