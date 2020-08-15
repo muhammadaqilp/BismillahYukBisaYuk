@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginBottom="-10dp"
+    android:background="@drawable/border_profile">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/shape1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_bold"
+                android:padding="4dp"
+                android:text="16 Maret 2020"
+                android:textColor="#030303"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_status_gizi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gizi menuju obesitas"
+                android:textAlignment="textEnd"
+                android:paddingEnd="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/lato_bold"
+                android:layout_marginTop="-21dp"/>
+
+            <TextView
+                android:id="@+id/tv_berat_badan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:padding="4dp"
+                android:text="Berat: 20 kg"
+                android:textColor="@color/blackTextColor"
+                android:letterSpacing="0.1"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/imunisasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Imunisasi polio"
+                android:textAlignment="textEnd"
+                android:paddingEnd="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/basic"
+                android:fontFamily="@font/lato"
+                android:layout_marginTop="-21dp"/>
+            <TextView
+                android:id="@+id/tv_tinggi_badan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:padding="4dp"
+                android:text="Tinggi: 30.0 cm"
+                android:textColor="@color/blackTextColor"
+                android:letterSpacing="0.1"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/tv_vitamin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vitamin C"
+                android:textAlignment="textEnd"
+                android:paddingEnd="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/basic"
+                android:fontFamily="@font/lato"
+                android:layout_marginTop="-21dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
