@@ -30,7 +30,7 @@
                     android:letterSpacing="0.05"
                     android:text="Tambahkan Data Perkembangan"
                     android:textColor="@color/basic"
-                    android:textSize="20sp" />
+                    android:textSize="16sp" />
             </RelativeLayout>
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
@@ -61,7 +61,7 @@
 
             <com.rengwuxian.materialedittext.MaterialEditText
                 android:id="@+id/tempatlahir"
-                android:layout_width="350dp"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_weight="1"
@@ -89,7 +89,7 @@
 
             <com.rengwuxian.materialedittext.MaterialEditText
                 android:id="@+id/tv_tgl_lahir"
-                android:layout_width="350dp"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_weight="1"
@@ -117,7 +117,7 @@
 
             <com.rengwuxian.materialedittext.MaterialEditText
                 android:id="@+id/tv_tgl_rekam"
-                android:layout_width="350dp"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_weight="1"
@@ -147,7 +147,7 @@
 
             <com.rengwuxian.materialedittext.MaterialEditText
                 android:id="@+id/tv_berat_badan"
-                android:layout_width="350dp"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_weight="1"
@@ -175,7 +175,7 @@
 
             <com.rengwuxian.materialedittext.MaterialEditText
                 android:id="@+id/tv_tinggi_badan"
-                android:layout_width="350dp"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_weight="1"
@@ -185,7 +185,7 @@
                 app:met_floatingLabel="normal" />
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/lingkar_kepala"
+            android:id="@+id/vitamin"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginLeft="8dp"
@@ -194,21 +194,22 @@
             android:orientation="horizontal"
             android:weightSum="2">
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"
-                android:src="@drawable/ic_circle" />
+                android:src="@drawable/ic_vitamins_clr"
+                />
 
             <com.rengwuxian.materialedittext.MaterialEditText
-                android:id="@+id/tv_lingkar_kepala"
-                android:layout_width="350dp"
+                android:id="@+id/tv_vitamin"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/open_sans"
-                android:hint="lingkar kepala (cm)"
+                android:hint="Vitamin"
                 android:padding="2dp"
                 app:met_floatingLabel="normal" />
         </LinearLayout>
@@ -228,16 +229,16 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"
-                android:src="@drawable/arm" />
+                android:src="@drawable/ic_baby" />
 
             <com.rengwuxian.materialedittext.MaterialEditText
                 android:id="@+id/tv_lingkar_lengan"
-                android:layout_width="350dp"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/open_sans"
-                android:hint="Lingkar lengan (cm)"
+                android:hint="Imunisasi"
                 android:padding="2dp"
                 app:met_floatingLabel="normal" />
         </LinearLayout>

@@ -45,31 +45,68 @@
             android:id="@+id/bar2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?android:attr/windowBackground">
+            android:background="?android:attr/windowBackground"
+            android:padding="16dp">
 
-            <EditText
-                android:id="@+id/etTitle"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Enter Title"
-                android:inputType="textPersonName" />
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="@font/lato"
+                    android:text="Apa yang baru?"
+                    android:textColor="@color/blackTextColor"
+                    android:textSize="20sp" />
 
-            <EditText
-                android:id="@+id/etMessage"
+                <EditText
+                    android:id="@+id/etTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nama notifikasi"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/etTitle"
-                android:ems="10"
-                android:hint="Enter message"
-                android:inputType="textPersonName" />
+                android:orientation="vertical"
+                android:layout_marginBottom="14dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="@font/lato"
+                    android:text="Ada pesan tambahan?"
+                    android:textColor="@color/blackTextColor"
+                    android:textSize="20sp" />
+                <EditText
+                    android:id="@+id/etMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etTitle"
+                    android:ems="10"
+                    android:hint="Masukan pesan"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
 
             <Button
+                android:layout_marginTop="20dp"
                 android:id="@+id/btnSend"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_below="@id/etMessage"
-                android:text="Send" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape1"
+                android:text="Kirim"
+                android:backgroundTint="@color/button"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/lato_bold"/>
 
 
         </com.google.android.material.appbar.AppBarLayout>

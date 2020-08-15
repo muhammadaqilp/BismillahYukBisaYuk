@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".parentsProfil"
+    tools:showIn="@layout/activity_lihat_data_detail">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="60dp">
+            <RelativeLayout style="@style/profileDetailsLayout">
+                <ImageView
+                    android:id="@+id/nik"
+                    android:src="@drawable/father"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:id="@+id/tv_nik"
+                    android:text="Username"
+                    android:layout_toRightOf="@id/nik"
+                    style="@style/profileDetailsTextMain" />
+
+                <TextView
+                    android:id="@+id/nomor_nik"
+                    android:text="nomor NIK"
+                    android:layout_toRightOf="@id/nik"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/profileDetailsLayout">
+                <ImageView
+                    android:id="@+id/nameImageViewAyah"
+                    android:src="@drawable/father"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:id="@+id/nameTextViewAyah"
+                    android:text="Nama Ayah"
+                    android:layout_toRightOf="@id/nameImageViewAyah"
+                    style="@style/profileDetailsTextMain" />
+
+                <TextView
+                    android:id="@+id/nama_ayah"
+                    android:text="Siapa Kek"
+                    android:layout_toRightOf="@id/nameImageViewAyah"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/profileDetailsLayout">
+                <ImageView
+                    android:id="@+id/nameImageViewIbu"
+                    android:src="@drawable/mother"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:id="@+id/nameTextViewIbu"
+                    android:text="Nama Ibu"
+                    android:layout_toRightOf="@id/nameImageViewIbu"
+                    style="@style/profileDetailsTextMain" />
+
+                <TextView
+                    android:id="@+id/nama_ibu"
+                    android:text="Siapa ya"
+                    android:layout_toRightOf="@id/nameImageViewIbu"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+            <View style="@style/proifleDetailsView" />
+            <RelativeLayout style="@style/profileDetailsLayout">
+                <ImageView
+                    android:id="@+id/mobileImageView"
+                    android:src="@drawable/phone_ringing"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:text="@string/profil_telfon"
+                    android:layout_toRightOf="@id/mobileImageView"
+                    style="@style/profileDetailsTextMain"/>
+
+                <TextView
+                    android:id="@+id/nomor_telp"
+                    android:text="+91-8129999999"
+                    android:layout_toRightOf="@id/mobileImageView"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+            <View style="@style/proifleDetailsView" />
+            <RelativeLayout style="@style/profileDetailsLayout">
+                <ImageView
+                    android:id="@+id/emailImageView"
+                    android:src="@drawable/book"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:text="@string/profil_KK"
+                    android:layout_toRightOf="@id/emailImageView"
+                    style="@style/profileDetailsTextMain" />
+
+                <TextView
+                    android:id="@+id/nomor_kk"
+                    android:text="1180910000223"
+                    android:layout_toRightOf="@id/emailImageView"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+            <View style="@style/proifleDetailsView" />
+            <RelativeLayout style="@style/profileDetailsLayout">
+                <ImageView
+                    android:id="@+id/addressImageView"
+                    android:src="@drawable/pin"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:text="@string/profil_alamat"
+                    android:layout_toRightOf="@id/addressImageView"
+                    style="@style/profileDetailsTextMain" />
+
+                <TextView
+                    android:id="@+id/alamat_rumah"
+                    android:text="Avenue 2nd Street NW SY."
+                    android:layout_toRightOf="@id/addressImageView"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.core.widget.NestedScrollView>

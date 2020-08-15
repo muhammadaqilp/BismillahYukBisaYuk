@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="center_vertical"
         android:padding="10dp"
-        android:src="@drawable/ic_food" />
+        android:src="@drawable/ic_event_blue" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,22 +20,22 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/namaresep"
+            android:id="@+id/nama_notif"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato_bold"
             android:padding="4dp"
-            android:text="Menu 1"
+            android:text="Imunisasi Polio"
             android:textColor="#030303"
             android:textSize="16sp" />
 
         <TextView
-            android:id="@+id/yukresep"
+            android:id="@+id/pesan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/open_sans"
             android:padding="4dp"
-            android:text="Yuk Pelajari Bagaimana Cara Memasak Menu 1"
+            android:text="Diwajibkan bagi anak berusia 1 tahun"
             android:textColor="#343F4B"
             android:textSize="14sp" />
 
