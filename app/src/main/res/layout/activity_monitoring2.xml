@@ -60,7 +60,7 @@
                 android:src="@drawable/infant" />
 
             <com.rengwuxian.materialedittext.MaterialEditText
-                android:id="@+id/tempatlahir"
+                android:id="@+id/namaanak"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -152,6 +152,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/open_sans"
+                android:inputType="numberDecimal"
                 android:hint="Berat badan (kg)"
                 android:padding="2dp"
                 app:met_floatingLabel="normal" />
@@ -180,6 +181,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/open_sans"
+                android:inputType="number"
                 android:hint="Tinggi Badan (cm)"
                 android:padding="2dp"
                 app:met_floatingLabel="normal" />
@@ -209,6 +211,8 @@
                 android:layout_marginStart="8dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/open_sans"
+                android:inputType="text"
+                android:imeOptions="actionNext"
                 android:hint="Vitamin"
                 android:padding="2dp"
                 app:met_floatingLabel="normal" />
@@ -238,6 +242,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/open_sans"
+                android:inputType="text"
                 android:hint="Imunisasi"
                 android:padding="2dp"
                 app:met_floatingLabel="normal" />

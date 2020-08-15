@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.bismillahyukbisayuk.LihatDataDetailActivity;
 import com.example.bismillahyukbisayuk.Model.User;
 import com.example.bismillahyukbisayuk.MonitoringActivity2;
 import com.example.bismillahyukbisayuk.R;
@@ -51,9 +52,9 @@ public class LihatDataAdapter extends RecyclerView.Adapter<LihatDataAdapter.View
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent move = new Intent(mContext, MonitoringActivity2.class);
-//                move.putExtra("profileid", user.getId());
-//                mContext.startActivity(move);
+                Intent move = new Intent(mContext, LihatDataDetailActivity.class);
+                move.putExtra("profileid", user.getId());
+                mContext.startActivity(move);
             }
         });
 
