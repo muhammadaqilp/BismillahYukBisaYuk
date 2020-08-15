@@ -129,9 +129,12 @@ public class MainActivity extends AppCompatActivity {
                                                 int days = period.getDays();
 
                                                 String usiaFix = years + " Tahun " + month + " Bulan " + days + " Hari";
+                                                int u = (years*12)+month;
+                                                String usiaBulan = String.valueOf(u);
 
                                                 HashMap<String, Object> hashMap = new HashMap<>();
                                                 hashMap.put("usia", usiaFix);
+                                                hashMap.put("usiaBulan", usiaBulan);
 
                                                 reference.updateChildren(hashMap);
                                             } else {

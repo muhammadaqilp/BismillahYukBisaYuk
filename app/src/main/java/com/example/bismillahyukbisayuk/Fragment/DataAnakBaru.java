@@ -82,8 +82,8 @@ public class DataAnakBaru extends Fragment {
                 beratAnak.setText(user.getBeratBadan()+" Kg");
                 tinggiAnak.setText(user.getTinggiBadan()+" Cm");
                 usiaAnak.setText(user.getUsia());
-                namaImunisasi.setText(" - ");
-                namaVitamin.setText(" - ");
+                namaImunisasi.setText(user.getNamaImunisasi());
+                namaVitamin.setText(user.getNamaVitamin());
 
             }
 

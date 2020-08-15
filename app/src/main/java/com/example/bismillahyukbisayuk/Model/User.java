@@ -13,12 +13,15 @@ public class User {
     private String tempatLahir;
     private String tanggalLahir;
     private String usia;
+    private String usiaBulan;
     private String tinggiBadan;
     private String beratBadan;
     private String jenisKelamin;
+    private String namaImunisasi;
+    private String namaVitamin;
     private String level;
 
-    public User(String id, String username, String nomorKK, String namaAyah, String namaIbu, String alamatRumah, String nomorTelepon, String namaAnak, String tempatLahir, String tanggalLahir, String usia, String tinggiBadan, String beratBadan, String jenisKelamin, String level) {
+    public User(String id, String username, String nomorKK, String namaAyah, String namaIbu, String alamatRumah, String nomorTelepon, String namaAnak, String tempatLahir, String tanggalLahir, String usia, String usiaBulan, String tinggiBadan, String beratBadan, String jenisKelamin, String namaImunisasi, String namaVitamin, String level) {
         this.id = id;
         this.username = username;
         this.nomorKK = nomorKK;
@@ -30,9 +33,12 @@ public class User {
         this.tempatLahir = tempatLahir;
         this.tanggalLahir = tanggalLahir;
         this.usia = usia;
+        this.usiaBulan = usiaBulan;
         this.tinggiBadan = tinggiBadan;
         this.beratBadan = beratBadan;
         this.jenisKelamin = jenisKelamin;
+        this.namaImunisasi = namaImunisasi;
+        this.namaVitamin = namaVitamin;
         this.level = level;
     }
 
@@ -157,5 +163,29 @@ public class User {
 
     public void setLevel(String level) {
         this.level = level;
+    }
+
+    public String getUsiaBulan() {
+        return usiaBulan;
+    }
+
+    public void setUsiaBulan(String usiaBulan) {
+        this.usiaBulan = usiaBulan;
+    }
+
+    public String getNamaImunisasi() {
+        return namaImunisasi;
+    }
+
+    public void setNamaImunisasi(String namaImunisasi) {
+        this.namaImunisasi = namaImunisasi;
+    }
+
+    public String getNamaVitamin() {
+        return namaVitamin;
+    }
+
+    public void setNamaVitamin(String namaVitamin) {
+        this.namaVitamin = namaVitamin;
     }
 }

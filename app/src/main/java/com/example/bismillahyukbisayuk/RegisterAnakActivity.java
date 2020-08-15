@@ -156,14 +156,14 @@ public class RegisterAnakActivity extends AppCompatActivity {
                 String berat = beratBadan.getText().toString();
                 String jeniskelamin = radioButton.getText().toString();
                 String level = "user";
-                register(email, username, password, nomorkk, namaayah, namaibu, alamat, nomortelp, namaanak, tempatlahir, tanggallahir, tinggi, berat, jeniskelamin, level, usia);
+                register(email, username, password, nomorkk, namaayah, namaibu, alamat, nomortelp, namaanak, tempatlahir, tanggallahir, tinggi, berat, jeniskelamin, level, usia, usiaBulan);
             }
         });
     }
 
     private void register(final String email, final String username, final String password, final String kk, final String ayah, final String ibu,
                           final String alamatrmh, final String telepon, final String anak, final String tempat, final String tanggal,
-                          final String tinggi, final String berat, final String jeniskelamin, final String level, final String usia) {
+                          final String tinggi, final String berat, final String jeniskelamin, final String level, final String usia, final String usiaBulan) {
         auth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(RegisterAnakActivity.this, new OnCompleteListener<AuthResult>() {
                     @Override
@@ -186,9 +186,12 @@ public class RegisterAnakActivity extends AppCompatActivity {
                             hashMap.put("tempatLahir", tempat);
                             hashMap.put("tanggalLahir", tanggal);
                             hashMap.put("usia", usia);
+                            hashMap.put("usiaBulan", usiaBulan);
                             hashMap.put("tinggiBadan", tinggi);
                             hashMap.put("beratBadan", berat);
                             hashMap.put("jenisKelamin", jeniskelamin);
+                            hashMap.put("namaImunisasi", "-");
+                            hashMap.put("namaVitamin", "-");
                             hashMap.put("level", level);
 
                             reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {

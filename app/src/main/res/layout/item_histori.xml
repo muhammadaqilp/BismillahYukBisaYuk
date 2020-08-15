@@ -22,20 +22,22 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/lato_bold"
                 android:padding="4dp"
+                android:id="@+id/tanggal"
                 android:text="16 Maret 2020"
                 android:textColor="#030303"
                 android:textSize="16sp" />
+
             <TextView
                 android:id="@+id/tv_status_gizi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="-21dp"
+                android:fontFamily="@font/lato_bold"
+                android:paddingEnd="10dp"
                 android:text="Gizi menuju obesitas"
                 android:textAlignment="textEnd"
-                android:paddingEnd="10dp"
-                android:textSize="16sp"
                 android:textColor="@color/colorAccent"
-                android:fontFamily="@font/lato_bold"
-                android:layout_marginTop="-21dp"/>
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/tv_berat_badan"

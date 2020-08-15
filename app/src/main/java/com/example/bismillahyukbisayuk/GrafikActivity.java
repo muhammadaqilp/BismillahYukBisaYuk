@@ -41,9 +41,6 @@ public class GrafikActivity extends AppCompatActivity {
 
     GraphView mScatterPlot;
 
-    Double x, y;
-    String a = "3";
-    String s = "5.5";
 
     //make xyValueArray global
     private ArrayList<XYValue> xyValueArray;
@@ -71,21 +68,9 @@ public class GrafikActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 User user = dataSnapshot.getValue(User.class);
 
-//                String tgl = user.getUsia();
-////
-////                String[] arr = tgl.split("/");
-////                String t = arr[0];
-////                String b = arr[1];
-////                String da = arr[2];
-////
-////                int tF = Integer.parseInt(t);
-////                int bF = Integer.parseInt(b);
-////                int yF = Integer.parseInt(da);
-////
-////                int bln = (tF*12)+(bF);
-
-//                x = Double.parseDouble(user.getUsia());
-//                y = Double.parseDouble(user.getBeratBadan());
+                String a = user.getUsiaBulan();
+                String s = user.getBeratBadan();
+                init(a, s);
 
             }
 
@@ -95,15 +80,15 @@ public class GrafikActivity extends AppCompatActivity {
             }
         });
 
-        init();
+
     }
 
-    private void init() {
+    private void init(String a, String s) {
         //declare the xySeries Object
         xySeries = new PointsGraphSeries<>();
 
-        x = Double.parseDouble(a);
-        y = Double.parseDouble(s);
+        Double x = Double.parseDouble(a);
+        Double y = Double.parseDouble(s);
         xyValueArray.add(new XYValue(x, y));
 //        init();
 
@@ -122,13 +107,13 @@ public class GrafikActivity extends AppCompatActivity {
         xyValueArray = sortArray(xyValueArray);
 
         //add the data to the series
-        for(int i = 0;i <xyValueArray.size(); i++){
-            try{
+        for (int i = 0; i < xyValueArray.size(); i++) {
+            try {
                 double x = xyValueArray.get(i).getX();
                 double y = xyValueArray.get(i).getY();
-                xySeries.appendData(new DataPoint(x,y),true, 1000);
-            }catch (IllegalArgumentException e){
-                Log.e(TAG, "createScatterPlot: IllegalArgumentException: " + e.getMessage() );
+                xySeries.appendData(new DataPoint(x, y), true, 1000);
+            } catch (IllegalArgumentException e) {
+                Log.e(TAG, "createScatterPlot: IllegalArgumentException: " + e.getMessage());
             }
         }
 
@@ -158,14 +143,15 @@ public class GrafikActivity extends AppCompatActivity {
 
     /**
      * Sorts an ArrayList<XYValue> with respect to the x values.
+     *
      * @param array
      * @return
      */
-    private ArrayList<XYValue> sortArray(ArrayList<XYValue> array){
+    private ArrayList<XYValue> sortArray(ArrayList<XYValue> array) {
         /*
         //Sorts the xyValues in Ascending order to prepare them for the PointsGraphSeries<DataSet>
          */
-        int factor = Integer.parseInt(String.valueOf(Math.round(Math.pow(array.size(),2))));
+        int factor = Integer.parseInt(String.valueOf(Math.round(Math.pow(array.size(), 2))));
         int m = array.size() - 1;
         int count = 0;
         Log.d(TAG, "sortArray: Sorting the XYArray.");
@@ -212,9 +198,10 @@ public class GrafikActivity extends AppCompatActivity {
 
     /**
      * customizable toast
+     *
      * @param message
      */
-    private void toastMessage(String message){
-        Toast.makeText(this,message, Toast.LENGTH_SHORT).show();
+    private void toastMessage(String message) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 }
