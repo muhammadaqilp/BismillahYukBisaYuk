@@ -7,7 +7,9 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.widget.Toolbar
+import com.example.bismillahyukbisayuk.Model.Berita
 import com.example.bismillahyukbisayuk.R
+import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.iid.FirebaseInstanceId
 import com.google.firebase.messaging.FirebaseMessaging
 import com.google.gson.Gson
@@ -53,6 +55,13 @@ class MainActivityPush : AppCompatActivity() {
                         TOPIC
                 ).also {
                     sendNotification(it)
+                }
+                val ref = FirebaseDatabase.getInstance().getReference("Berita")
+                val beritaid = ref.push().key
+
+                val berita = Berita(beritaid, title, message, "notifikasi")
+                if (beritaid != null) {
+                    ref.child(beritaid).setValue(berita)
                 }
             }
         }

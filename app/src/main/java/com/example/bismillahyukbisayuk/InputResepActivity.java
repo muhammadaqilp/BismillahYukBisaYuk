@@ -41,6 +41,7 @@ public class InputResepActivity extends AppCompatActivity {
     TextView post;
     EditText namaResep;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -110,6 +111,18 @@ public class InputResepActivity extends AppCompatActivity {
                         hashMap.put("publisher", FirebaseAuth.getInstance().getCurrentUser().getUid());
 
                         reference.child(resepid).setValue(hashMap);
+
+                        DatabaseReference reference1 = FirebaseDatabase.getInstance().getReference("Berita");
+
+                        String beritaid = reference1.push().getKey();
+
+                        HashMap<String, Object> hashMap1 = new HashMap<>();
+                        hashMap1.put("beritaid", beritaid);
+                        hashMap1.put("judulberita", "Ada Resep Baru Nih, Membuat "+namaResep.getText().toString());
+                        hashMap1.put("isiberita", "Yuk ketahui cara membuatnya dengan melihat di menu resep!");
+                        hashMap1.put("jenisberita", "resep");
+
+                        reference1.child(beritaid).setValue(hashMap1);
 
                         progressDialog.dismiss();
 
