@@ -134,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
 
                                                 HashMap<String, Object> hashMap = new HashMap<>();
                                                 hashMap.put("usia", usiaFix);
-                                                hashMap.put("usiaBulan", usiaBulan);
+//                                                hashMap.put("usiaBulan", usiaBulan);
 
                                                 reference.updateChildren(hashMap);
                                             } else {

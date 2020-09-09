@@ -14,6 +14,7 @@ public class User {
     private String tanggalLahir;
     private String usia;
     private String usiaBulan;
+    private String statusGizi;
     private String tinggiBadan;
     private String beratBadan;
     private String jenisKelamin;
@@ -21,7 +22,7 @@ public class User {
     private String namaVitamin;
     private String level;
 
-    public User(String id, String username, String nomorKK, String namaAyah, String namaIbu, String alamatRumah, String nomorTelepon, String namaAnak, String tempatLahir, String tanggalLahir, String usia, String usiaBulan, String tinggiBadan, String beratBadan, String jenisKelamin, String namaImunisasi, String namaVitamin, String level) {
+    public User(String id, String username, String nomorKK, String namaAyah, String namaIbu, String alamatRumah, String nomorTelepon, String namaAnak, String tempatLahir, String tanggalLahir, String usia, String usiaBulan, String statusGizi, String tinggiBadan, String beratBadan, String jenisKelamin, String namaImunisasi, String namaVitamin, String level) {
         this.id = id;
         this.username = username;
         this.nomorKK = nomorKK;
@@ -34,6 +35,7 @@ public class User {
         this.tanggalLahir = tanggalLahir;
         this.usia = usia;
         this.usiaBulan = usiaBulan;
+        this.statusGizi = statusGizi;
         this.tinggiBadan = tinggiBadan;
         this.beratBadan = beratBadan;
         this.jenisKelamin = jenisKelamin;
@@ -171,6 +173,14 @@ public class User {
 
     public void setUsiaBulan(String usiaBulan) {
         this.usiaBulan = usiaBulan;
+    }
+
+    public String getStatusGizi() {
+        return statusGizi;
+    }
+
+    public void setStatusGizi(String statusGizi) {
+        this.statusGizi = statusGizi;
     }
 
     public String getNamaImunisasi() {

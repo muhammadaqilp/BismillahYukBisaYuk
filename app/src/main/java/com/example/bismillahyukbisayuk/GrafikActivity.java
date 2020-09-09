@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.bismillahyukbisayuk.Model.User;
@@ -22,6 +23,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.jjoe64.graphview.GraphView;
+import com.jjoe64.graphview.GridLabelRenderer;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.PointsGraphSeries;
 
@@ -30,6 +32,8 @@ import java.util.ArrayList;
 public class GrafikActivity extends AppCompatActivity {
 
     Toolbar toolbar;
+
+    TextView tvStatusGizi, rekomendasi1, rekomendasi2;
 
     private static final String TAG = "NyobainGrafik";
 
@@ -51,6 +55,9 @@ public class GrafikActivity extends AppCompatActivity {
         setContentView(R.layout.activity_grafik);
 
         toolbar = findViewById(R.id.toolbar);
+        tvStatusGizi = findViewById(R.id.statusgizinya);
+        rekomendasi1 = findViewById(R.id.rekomen1);
+        rekomendasi2 = findViewById(R.id.rekomen2);
 
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -70,8 +77,31 @@ public class GrafikActivity extends AppCompatActivity {
 
                 String a = user.getUsiaBulan();
                 String s = user.getBeratBadan();
+                String gizi = user.getStatusGizi();
+
+                tvStatusGizi.setText(gizi);
                 init(a, s);
 
+                if (gizi.equals("Gizi Buruk")){
+                    rekomendasi1.setText("•\tTambahkan 1/3 bagian dari setengah piring untuk lauk pauk dan kurangi untuk buah");
+                    rekomendasi2.setText("•\tMakan buah 1-2 porsi, makanan sumber protein hewani dan nabati 4-5 porsi");
+                }
+                else if (gizi.equals("Mendekati Buruk")){
+                    rekomendasi1.setText("•\tTambahkan 1/3 bagian dari setengah piring untuk lauk pauk dan kurangi untuk buah");
+                    rekomendasi2.setText("•\tMakan buah 1-2 porsi, makanan sumber protein hewani dan nabati 4-5 porsi");
+                }
+                else if (gizi.equals("Normal")){
+                    rekomendasi1.setText("•\tIsilah 2/3 bagian dari setengah piring masing-masing untuk makanan pokok dan untuk sayuran, 1/3 bagian dari setengah piring masing-masing untuk lauk-pauk dan untuk buah");
+                    rekomendasi2.setText("•\tMakan sumber karbohidrat 3-4 porsi, makan sayur 3-4 porsi, buah 2-3 porsi, makanan sumber protein hewani dan nabati 2-4 porsi");
+                }
+                else if (gizi.equals("Overweight")){
+                    rekomendasi1.setText("•\tKurangi 2/3 bagian dari setengah piring untuk makanan pokok dan tambahkan untuk sayuran");
+                    rekomendasi2.setText("•\tMakan sumber karbohidrat 2-3 porsi, makan sayur 4-5 porsi");
+                }
+                else {
+                    rekomendasi1.setText("•\tKurangi 2/3 bagian dari setengah piring untuk makanan pokok dan tambahkan untuk sayuran");
+                    rekomendasi2.setText("•\tMakan sumber karbohidrat 2-3 porsi, makan sayur 4-5 porsi");
+                }
             }
 
             @Override
@@ -119,7 +149,7 @@ public class GrafikActivity extends AppCompatActivity {
 
         //set some properties
         xySeries.setShape(PointsGraphSeries.Shape.POINT);
-        xySeries.setColor(Color.BLUE);
+        xySeries.setColor(Color.BLACK);
         xySeries.setSize(8f);
 
         //set Scrollable and Scaleable
@@ -130,13 +160,15 @@ public class GrafikActivity extends AppCompatActivity {
 
         //set manual x bounds
         mScatterPlot.getViewport().setYAxisBoundsManual(true);
-        mScatterPlot.getViewport().setMaxY(30);
+        mScatterPlot.getViewport().setMaxY(18);
         mScatterPlot.getViewport().setMinY(-0);
 
         //set manual y bounds
         mScatterPlot.getViewport().setXAxisBoundsManual(true);
-        mScatterPlot.getViewport().setMaxX(60);
+        mScatterPlot.getViewport().setMaxX(24);
         mScatterPlot.getViewport().setMinX(-0);
+
+        mScatterPlot.getGridLabelRenderer().setGridStyle(GridLabelRenderer.GridStyle.NONE);
 
         mScatterPlot.addSeries(xySeries);
     }

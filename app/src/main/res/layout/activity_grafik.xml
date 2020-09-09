@@ -2,9 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wlwl"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/wlwl"
     tools:context=".GrafikActivity">
 
     <androidx.appcompat.widget.Toolbar
@@ -30,50 +30,128 @@
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
 
+    <ScrollView
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_below="@id/toolbar">
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical">
 
         <com.jjoe64.graphview.GraphView
-            android:layout_width="match_parent"
-            android:layout_height="350dp"
             android:id="@+id/scatterPlot"
-            android:background="@drawable/grafikbackground">
+            android:layout_width="match_parent"
+            android:background="@drawable/cobain8"
+            android:layout_height="350dp">
 
         </com.jjoe64.graphview.GraphView>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_margin="16dp"
+            android:background="@drawable/shape1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="Keterangan"
+                android:textColor="@color/basic"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:text="Sumbu x : umur (dalam bulan)"
+                android:textColor="@color/blackTextColor"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:text="Sumbu y : berat badan (dalam kg)"
+                android:textColor="@color/blackTextColor"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8dp"
             android:background="@drawable/shape1">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Keterangan"
-                android:layout_marginBottom="10dp"
-                android:textSize="26sp"
+                android:text="Status Gizi Anak"
+                android:textSize="20sp"
+                android:textAlignment="center"
                 android:fontFamily="@font/lato_bold"
                 android:textColor="@color/basic" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Sumbu x : umur (dalam bulan)"
+                android:textAlignment="center"
+                android:text="Status Gizi Anak Anda:"
                 android:textSize="16sp"
                 android:fontFamily="@font/open_sans"
                 android:textColor="@color/blackTextColor" />
+
+            <TextView
+                android:id="@+id/statusgizinya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:text="Status"
+                android:textAlignment="center"
+                android:textColor="@color/blackTextColor"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Sumbu y : berat badan (dalam kg)"
+                android:text="Rekomendasi Makanan"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="@color/basic" />
+
+            <TextView
+                android:id="@+id/rekomen1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:text="Rekomendasi 1"
                 android:textSize="16sp"
                 android:fontFamily="@font/open_sans"
                 android:textColor="@color/blackTextColor" />
+
+            <TextView
+                android:id="@+id/rekomen2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:text="Rekomendasi 2"
+                android:textAlignment="textStart"
+                android:textColor="@color/blackTextColor"
+                android:textSize="16sp" />
         </LinearLayout>
-
     </LinearLayout>
-
+    </com.google.android.material.appbar.AppBarLayout>
+    </ScrollView>
 </RelativeLayout>
